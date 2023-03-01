@@ -79,16 +79,6 @@ export default function App({ Component, pageProps }) {
 							Postings overview (redirect)
 						</Link>
 					</li>
-					<li>
-						<Link href="/post/1" prefetch={false}>
-							Post 1
-						</Link>
-					</li>
-					<li>
-						<Link href="/post/3" prefetch={false}>
-							Post 3
-						</Link>
-					</li>
 				</ul>
 				<ul
 					style={{
