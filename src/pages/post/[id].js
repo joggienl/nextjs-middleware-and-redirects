@@ -1,6 +1,12 @@
 import Head from 'next/head'
 
 export default function SinglePostPage({ pageId }) {
+	const router = useRouter()
+
+	if (router.isFallback) {
+		return <p>loading...</p>
+	}
+
 	return (
 		<>
 			<Head>
@@ -14,7 +20,7 @@ export default function SinglePostPage({ pageId }) {
 export async function getStaticPaths() {
 	return {
 		paths: [],
-		fallback: 'blocking',
+		fallback: true,
 	}
 }
 export async function getStaticProps({ params }) {
