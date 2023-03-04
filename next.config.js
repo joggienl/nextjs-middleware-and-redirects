@@ -2,6 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
+	skipMiddlewareUrlNormalize: true,
 	i18n: {
 		locales: ['de', 'en', 'nl'],
 		defaultLocale: 'en',
